@@ -25,3 +25,5 @@ gulp build
 </script>
 <script defer type="text/javascript" src="path/to/dist/fubracookiebar.min.js"></script>
 ```
+
+![alt tag](https://github.com/fubralimited/fubracookiebar/blob/master/screenshot.png)
