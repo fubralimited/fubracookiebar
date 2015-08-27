@@ -1,0 +1,144 @@
+
+// Variables
+$color-background: #E2E2E2;
+$color-text: #333;
+$color-button: #488CD9;
+
+
+.fookie-wrapper {
+  z-index: 9001;
+  position: relative;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+
+  @media print {
+    display: none;
+  }
+}
+
+.fookie-container {
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 10px;
+  background: $color-background;
+  border-top: 1px solid darken($color-background, 3%);
+  color: $color-text;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  .fookie-btn {
+    line-height: 1em;
+    padding: 8px 10px;
+    background-color: $color-button;
+    cursor: pointer;
+    transition: font-size 200ms;
+    text-align: center;
+    font-size: 0.6em;
+    display: block;
+    width: 33%;
+    margin-left: 10px;
+    float: right;
+    max-width: 100px;
+  }
+
+  .fookie-message {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    transition: font-size 200ms;
+    font-size: 0.6em;
+    display: block;
+  }
+
+  .fookie-btn, .fookie-btn:visited {
+    color: $color-background;
+    background-color: $color-button;
+    transition: background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+
+  .fookie-btn:hover, .fookie-btn:active {
+    background-color: darken($color-button, 10%);
+    color: $color-background;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: $color-button;
+    transition: 200ms color;
+  }
+
+  a:hover, a:active {
+    color: darken($color-button, 10%);
+  }
+
+  @media screen and (min-width: 500px) {
+    .fookie-btn {
+      font-size: 0.8em;
+    }
+    .fookie-message {
+      font-size: 0.8em;
+      margin-top: 0.3em;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    padding: 5px 30px 5px;
+
+    .fookie-btn {
+      font-size: 1em;
+      padding: 5px 10px;
+    }
+
+    .fookie-message {
+      font-size: 1em;
+      line-height: 1em;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .fookie-message {
+      font-size: 1em;
+    }
+  }
+}
+
+// Reveal Animation
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(66px);
+    transform: translateY(66px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(66px);
+    -ms-transform: translateY(66px);
+    transform: translateY(66px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fookie-container, .fookie-message, .fookie-btn {
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp;
+}
