@@ -211,20 +211,29 @@
    */
   var fubracookiebar = {
     options: {
-      message: 'This website uses cookies to ensure you get the best experience. ',
-      dismiss: 'Got it!',
-      learnMore: 'Learn More',
-      link: null,
+      message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
+      dismiss: 'Got it',
+      learnMore: 'Read More',
+      moreText: 'In common with most websites, we use cookies to personalise the content and adverts that you see, to provide social media features and to help analyse our traffic. We also share basic information about your use of our site with our social media, advertising and analytics partners, such as Facebook, Twitter, and Google.',
       expiryDays: 365,
       markup: [
         '<div class="fookie-wrapper {{containerClasses}}">',
         '<div class="fookie-container fookie-container--open">',
         '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="fookie-btn fookie-btn_accept_all">{{options.dismiss}}</a>',
-        '<p class="fookie-message">{{options.message}} <a data-cc-if="options.link" class="fookie-more_info" href="{{options.link || "#null"}}" target="_blank">{{options.learnMore}}</a></p>',
+        '<p class="fookie-message">{{options.message}} <a data-cc-if="options.link" class="fookie-more_info" href="#popup" class="popup-link">{{options.learnMore}}</a></p>',
+        '</div>',
+        '<div id="closed"></div>',
+        '<div class="popup-wrapper" id="popup">',
+      	'<div class="popup-container">',
+        '<p>{{options.moreText}}</p>',
+    		'<a class="popup-close" href="#closed">X</a>',
+      	'</div>',
         '</div>',
         '</div>'
       ]
     },
+
+
 
     init: function () {
       var options = window[OPTIONS_VARIABLE];

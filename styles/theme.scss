@@ -142,3 +142,53 @@ $color-button: #488CD9;
   -webkit-animation-name: slideUp;
   animation-name: slideUp;
 }
+
+// POP OVER
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 99999999999;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+.popup-container {
+  position: relative;
+  border: 1px solid darken($color-background, 3%);
+  margin: 7% auto;
+  padding: 20px 30px;
+  background-color: $color-background;
+  color: $color-text;
+  line-height: 20px;
+  border-radius: 0;
+  @media (min-width: 768px) {
+    width: 600px;
+    border-radius: 3px;
+  }
+}
+a.popup-close {
+  position: absolute;
+  border-radius: 3px;
+  top: 3px;
+  right: 3px;
+  background-color: $color-button;
+  padding: 5px 8px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color: $color-background;
+}
