@@ -214,7 +214,7 @@
       message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
       dismiss: 'Got it',
       learnMore: 'Read More',
-      moreText: '<p><strong>In common with most websites, we use cookies to personalise the content and adverts that you see, to provide social media features and to help analyse our traffic.</p><p>We also share basic information about your use of our site with our social media, advertising and analytics partners, such as Facebook, Twitter, and Google.</strong></p><hr/><p><small>If you would prefer to disallow certain cookies, most web browsers will give you the ability to adjust your cookie preferences. Alternatively, you could enable private browsing (also known as incognito mode), which means that cookies are only set for your current session and will be deleted when you close the browser.</small></p>',
+      moreText: '<br/><p><strong>In common with most websites, we use cookies to personalise the content and adverts that you see, to provide social media features and to help analyse our traffic.</p><p>We also share basic information about your use of our site with our social media, advertising and analytics partners, such as Facebook, Twitter, and Google.</strong></p><hr/><p class="small">If you would prefer to disallow certain cookies, most web browsers will give you the ability to adjust your cookie preferences. Alternatively, you could enable private browsing (also known as incognito mode), which means that cookies are only set for your current session and will be deleted when you close the browser.</p>',
       expiryDays: 365,
       markup: [
         '<div class="fookie-wrapper {{containerClasses}}">',

@@ -175,8 +175,15 @@ $color-button: #488CD9;
   color: $color-text;
   line-height: 20px;
 
-  small {
-    line-height: 18px;
+  p {
+    margin: 1rem 0 !important;
+    line-height: 18px !important;
+    font-size: 16px !important;
+
+    &.small {
+      line-height: 18px !important;
+      font-size: 13px !important;
+    }
   }
 
   border-radius: 0;
