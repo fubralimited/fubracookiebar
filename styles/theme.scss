@@ -8,7 +8,6 @@ $color-button: #488CD9;
 .fookie-wrapper {
   z-index: 9001;
   position: relative;
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 
   @media print {
     display: none;
@@ -194,13 +193,16 @@ $color-button: #488CD9;
 }
 a.popup-close {
   position: absolute;
-  border-radius: 3px;
-  top: 3px;
-  right: 3px;
+  border-radius: 90px;
+  top: -10px;
+  right: -10px;
   background-color: $color-button;
-  padding: 5px 8px;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
-  line-height: 1;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
   color: $color-background;
 }

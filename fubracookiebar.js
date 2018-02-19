@@ -226,7 +226,7 @@
         '<div class="popup-wrapper" id="popup">',
       	'<div class="popup-container">',
         '{{options.moreText}}',
-    		'<a class="popup-close" href="#closed">X</a>',
+    		'<a class="popup-close" href="#closed">x</a>',
       	'</div>',
         '</div>',
         '</div>'
@@ -257,7 +257,7 @@
     loadTheme: function (callback) {
 
       var styleEl = document.createElement("style");
-      var styleData = document.createTextNode('<%theme-css%>');
+      var styleData = document.createTextNode("<%theme-css%>");
       styleEl.appendChild(styleData);
 
       var loaded = false;
