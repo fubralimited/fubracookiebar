@@ -17,7 +17,7 @@ gulp.task('minify', ['sass'], function () {
 
   var minifyPipe =
     gulp.src('./fubracookiebar.js')
-    .pipe(replace('<%theme-css%>', themeData))
+    .pipe(replace('<%theme-css%>', themeData.trim()))
     .pipe(uglify())
     .pipe(rename('fubracookiebar.min.js'))
     .pipe(gulp.dest('./dist'));
