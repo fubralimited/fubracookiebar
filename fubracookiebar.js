@@ -211,7 +211,7 @@
    */
   var fubracookiebar = {
     options: {
-      message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
+      message: 'This website uses cookies to ensure you get the best experience.',
       button: 'Accept and Close',
       more: 'Read More',
       link: '/main/privacy.html',
