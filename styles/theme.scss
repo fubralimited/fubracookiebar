@@ -36,11 +36,9 @@ $color-button: #488CD9;
     transition: font-size 200ms;
     text-align: center;
     font-size: 0.6em;
-    display: block;
-    width: 33%;
+    display: inline-block;
     margin-left: 10px;
     float: right;
-    max-width: 100px;
   }
 
   .fookie-message {

@@ -18,7 +18,7 @@ gulp build
 <script>
 window.fubracookiebar_options = {
     message: 'This website uses cookies to ensure you get the best experience. ',
-    button: 'Got it!',
+    button: 'Accept and Close',
     more: 'Learn More',
     link: '/privacy-policy.html'
 }

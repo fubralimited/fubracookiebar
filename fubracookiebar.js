@@ -212,7 +212,7 @@
   var fubracookiebar = {
     options: {
       message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
-      button: 'Got it',
+      button: 'Accept and Close',
       more: 'Read More',
       link: '/privacy-policy.html',
       expiryDays: 365,
