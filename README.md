@@ -16,20 +16,12 @@ gulp build
 ## Adding cookies bar to page
 ```
 <script>
-  window.fubracookiebar_options = {
-
-      message:
-        'This website uses cookies to ensure you get the best experience. ',
-
-      learnMore:
-        'Learn More',
-
-      moreText:
-        'In common with most websites, we use cookies to personalise the content and adverts that you see, to provide social media features and to help analyse our traffic. We also share basic information about your use of our site with our social media, advertising and analytics partners, such as Facebook, Twitter, and Google.',
-
-      dismiss:
-        'Got it!'
-  }
+window.fubracookiebar_options = {
+    message: 'This website uses cookies to ensure you get the best experience. ',
+    button: 'Got it!',
+    more: 'Learn More',
+    link: '/privacy-policy.html'
+}
 </script>
 <script defer type="text/javascript" src="path/to/dist/fubracookiebar.min.js"></script>
 ```

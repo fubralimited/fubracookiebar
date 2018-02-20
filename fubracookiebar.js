@@ -212,22 +212,15 @@
   var fubracookiebar = {
     options: {
       message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
-      dismiss: 'Got it',
-      learnMore: 'Read More',
-      moreText: '<br/><p><strong>In common with most websites, we use cookies to personalise the content and adverts that you see, to provide social media features and to help analyse our traffic.</p><p>We also share basic information about your use of our site with our social media, advertising and analytics partners, such as Facebook, Twitter, and Google.</strong></p><hr/><p class="small">If you would prefer to disallow certain cookies, most web browsers will give you the ability to adjust your cookie preferences. Alternatively, you could enable private browsing (also known as incognito mode), which means that cookies are only set for your current session and will be deleted when you close the browser.</p>',
+      button: 'Got it',
+      more: 'Read More',
+      link: '/privacy-policy.html',
       expiryDays: 365,
       markup: [
         '<div class="fookie-wrapper {{containerClasses}}">',
         '<div class="fookie-container fookie-container--open">',
-        '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="fookie-btn fookie-btn_accept_all">{{options.dismiss}}</a>',
-        '<p class="fookie-message">{{options.message}} <a class="fookie-more_info" href="#popup" class="popup-link">{{options.learnMore}}</a></p>',
-        '</div>',
-        '<div id="closed"></div>',
-        '<div class="popup-wrapper" id="popup">',
-      	'<div class="popup-container">',
-        '{{options.moreText}}',
-    		'<a class="popup-close" href="#closed">x</a>',
-      	'</div>',
+        '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="fookie-btn fookie-btn_accept_all">{{options.button}}</a>',
+        '<p class="fookie-message">{{options.message}} <a class="fookie-more_info" href="{{options.link}}" class="popup-link">{{options.more}}</a></p>',
         '</div>',
         '</div>'
       ]
