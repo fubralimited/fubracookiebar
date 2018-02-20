@@ -214,7 +214,7 @@
       message: 'This site uses cookies, and we also share information about your use of our site with our social media, advertising and analytics partners. ',
       button: 'Accept and Close',
       more: 'Read More',
-      link: '/privacy-policy.html',
+      link: '/main/privacy.html',
       expiryDays: 365,
       markup: [
         '<div class="fookie-wrapper {{containerClasses}}">',

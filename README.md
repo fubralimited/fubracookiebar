@@ -20,7 +20,7 @@ window.fubracookiebar_options = {
     message: 'This website uses cookies to ensure you get the best experience. ',
     button: 'Accept and Close',
     more: 'Learn More',
-    link: '/privacy-policy.html'
+    link: '/main/privacy.html'
 }
 </script>
 <script defer type="text/javascript" src="path/to/dist/fubracookiebar.min.js"></script>
