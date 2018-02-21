@@ -213,14 +213,12 @@
     options: {
       message: 'This website uses cookies to ensure you get the best experience.',
       button: 'Accept and Close',
-      more: 'Read More',
-      link: '/main/privacy.html',
       expiryDays: 365,
       markup: [
-        '<div class="fookie-wrapper {{containerClasses}}">',
+        '<div class="fookie-wrapper">',
         '<div class="fookie-container fookie-container--open">',
         '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="fookie-btn fookie-btn_accept_all">{{options.button}}</a>',
-        '<p class="fookie-message">{{options.message}} <a class="fookie-more_info" href="{{options.link}}" class="popup-link">{{options.more}}</a></p>',
+        '<p class="fookie-message">{{options.message}}</p>',
         '</div>',
         '</div>'
       ]
