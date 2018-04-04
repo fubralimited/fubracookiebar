@@ -232,6 +232,9 @@
 
       this.container = document.body;
 
+      // Add a body class
+      this.container.classList.add("cookiebar-visible");
+
       // Calls render when theme is loaded.
       this.loadTheme(this.render);
     },
@@ -282,6 +285,9 @@
       evt.returnValue = false;
       this.setDismissedCookie();
       this.container.removeChild(this.element);
+
+      // Remove the body class
+      this.container.classList.remove("cookiebar-visible");
     },
 
     setDismissedCookie: function () {
